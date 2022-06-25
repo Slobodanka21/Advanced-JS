@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JS</title>
+</head>
+<body>
+    
+
+
+
+
+<script>
+
+class Stydent {
+    constructor (name, address, phone, course) {
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.course = course;
+    }
+    getInfo  () {
+        return "Name: " + this.name + "\n" +
+                "Address: " + this.address + "\n" +
+                "Phone: " + this.phone + "\n" +
+                "Course: " + this.course + "\n"
+    }
+}
+
+var stydent1 = new Stydent ("John Benson", "High Park 36", "(507)833-3567", "Geography"); 
+let stydent1Info = stydent1.getInfo();
+
+console.log(stydent1Info);
+
+var stydent2 = new Stydent ("Emma Watson", "Oxford Street 25", "(507)854-5698", "Biology");
+let stydent2Info = stydent2.getInfo();
+console.log(stydent2Info);
+
+var stydent3 = new Stydent("Daniel Stone", "Baker Street 43", "(507)856-6375", "Herbology");
+let stydent3Info = stydent3.getInfo();
+console.log(stydent3Info);
+
+
+</script>
+
+
+
+
+</body>
+</html>
